@@ -44,8 +44,30 @@ _PCA_: We perfomed PCA before running more complex models in order to reduce the
 
 ![image](https://github.com/user-attachments/assets/50c7e53d-6c8f-4512-9c39-e4e1a8f93d44)
 
+_LDA_: LDA performed badly predicting negative reviews, with low scores. It performed decently well with neutral reviews, and well with positive reviews. '
+
+![image](https://github.com/user-attachments/assets/45e6eb7a-a686-4c5a-bc03-1df577f09908)
+
+_QDA_: QDA performed similarly to LDA with bad performance across metrics, except for accuracy, on the negative reviews. It performs better on neutral and positive reviews.
+
+![image](https://github.com/user-attachments/assets/930145d7-b96d-4dc9-8c3e-d2498860e31f)
+
+
 ## Discussion
 
+After examining all 4 models, we find the weighted average of the important metrics on the table below. 
+<img width="460" alt="Screenshot 2024-12-07 at 6 33 54 PM" src="https://github.com/user-attachments/assets/148408c3-f4f0-4e8e-b9d6-47b408736310">
+
+Observe how Logistic Regression performs the best across every metric observed. Additionally, Logistic Regression performed the best among each model _in each category_ to predict negative, neutral, and positive reviews. 
+
+Another note, is that each model performed the worst on negative reviews. This is likely due to the fact that there were far less negative reviews for the models to analyze than neutral and positive reviews. Yelp reviews tend to lean toward the positive, meaning there are much more positive reviews than negative ones. This also explains why each model performed the best predicting positive reviews as well. 
+
+In the future, these models should be trained with more negative reviews so that they are more able to accurately predict which words predict a negative sentiment. Furthermore, reviews that are sarcastic or funny can be hard for these models to interpret, future models should integrate understandings of this. 
+
+
+
 ## Conclusion
+
+The goal of this project was to find the best model to predict customer sentiment from a text review. The Logistic Regression model far and away beats the other models, even those that are more complex. We believe Logistic Regression performed the best because it is a simple, interpretable model that can efficiently handle high-dimensional text data through techniques like TF-IDF and regularization. Its ability to make linear predictions and manage imbalanced data with class weighting makes it effective for distinguishing between positive and negative reviews. 
 
 ## References
