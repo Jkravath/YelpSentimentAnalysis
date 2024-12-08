@@ -24,11 +24,20 @@ Our project analyzes a subset of the Yelp Open Dataset to predict the sentiment 
 
 The experimental setup includes a range of machine learning models for text classification. We started with simpler models like Naive Bayes and Logistic Regression and then tested advanced techniques such as Linear Discriminant Analysis, Quadratic Discriminant Analysis , and Principal Components Analysis. These models were evaluated based on performance metrics such as accuracy, precision, and recall. To ensure robust evaluations, we used cross-validation to assess model performance and estimate variability in the results.
 
-Our implementation transformed text into numerical representations using techniques such as word vectorization, enabling models to process the data effectively. For computational efficiency, we employed feature reduction techniques, such as Principal Component Analysis (PCA), to minimize the dimensionality of the dataset. We found that the optimal number of principle components is 18 as that yielded the lowest cross-validated MSE.
+Our implementation transformed text into numerical representations using techniques such as word vectorization, enabling models to process the data effectively. For computational efficiency, we employed feature reduction techniques, such as Principal Component Analysis (PCA), to minimize the dimensionality of the dataset. We found that the optimal number of principle components is 19 as that yielded the lowest cross-validated MSE.
 
 The computing environment for our experiments included Python libraries such as scikit-learn for machine learning implementation and evaluation, Pandas and Numpy for data manipulation, and Matplotlib for visualizing results. These experiments were conducted on a standard personal computer with sufficient memory and processing power for the dataset size. This setup provided a scalable and accessible framework for testing various machine learning models while addressing the challenges posed by high-dimensional text data.
 
 ## Results
+
+As discussed before, each model was evaluated along the metrics of precision, recall, F1-score, and accuracy. 
+
+_Logistic Regression_: Performed well across the board with a weighted average of 0.94 for precision, recall, F1-Score and accuracy. The model did extremely well identifying neutral or positive reviews. The model did less well analyzing negative reviews, having a significantly lower F1-Score and recall
+
+
+![image](https://github.com/user-attachments/assets/85840a9e-7950-44c3-8ca4-da00cd80b86a)
+
+
 
 ## Discussion
 
