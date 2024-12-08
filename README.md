@@ -32,12 +32,17 @@ The computing environment for our experiments included Python libraries such as 
 
 As discussed before, each model was evaluated along the metrics of precision, recall, F1-score, and accuracy. 
 
-_Logistic Regression_: Performed well across the board with a weighted average of 0.94 for precision, recall, F1-Score and accuracy. The model did extremely well identifying neutral or positive reviews. The model did less well analyzing negative reviews, having a significantly lower F1-Score and recall
+_Logistic Regression_: Performed well across the board with a weighted average of 0.94 for precision, recall, F1-Score and accuracy. The model did extremely well identifying neutral or positive reviews. The model did less well analyzing negative reviews, having a significantly lower F1-Score and recall. However, as discussed later, Logistic Regression displays the best performance across all of the metrics. 
 
+<img width="518" alt="Screenshot 2024-12-08 at 6 09 14 PM" src="https://github.com/user-attachments/assets/f331d1ec-e71e-4550-a57b-a1cfdeaf0529">
+
+_Naive Bayes_: Naive Bayes had mixed results. While accuracy and precision of naive bayes stayed relatively consistent along the categories of negative, neutral and positive, recall and F1-score varied dramatically. For negative reviews, the model has a very low recall and F1-score, hovering around 0.05-0.1.
 
 ![image](https://github.com/user-attachments/assets/85840a9e-7950-44c3-8ca4-da00cd80b86a)
 
+_PCA_: We perfomed PCA before running more complex models in order to reduce the dimensionality of the data. Initial PCA testing suggested 20 as the number of principal components for the model. However, after using cross-validation to improve the model, we found the optimal number of components between the range of 1-21 was 19. Therefore, we used this PCA model with 19 components to perform the more complex models of LDA and QDA. 
 
+![image](https://github.com/user-attachments/assets/50c7e53d-6c8f-4512-9c39-e4e1a8f93d44)
 
 ## Discussion
 
