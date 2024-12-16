@@ -73,4 +73,5 @@ The goal of this project was to find the best model to predict customer sentimen
 
 ## References
 [1] https://bigideasforsmallbusiness.com/the-impact-of-customer-reviews-on-small-businesses/
+
 [2] https://www.yelp.com/dataset
