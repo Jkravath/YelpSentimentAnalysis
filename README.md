@@ -56,6 +56,7 @@ _QDA_: QDA performed similarly to LDA with bad performance across metrics, excep
 ## Discussion
 
 After examining all 4 models, we find the weighted average of the important metrics on the table below. 
+
 <img width="460" alt="Screenshot 2024-12-07 at 6 33 54 PM" src="https://github.com/user-attachments/assets/148408c3-f4f0-4e8e-b9d6-47b408736310">
 
 Observe how Logistic Regression performs the best across every metric observed. Additionally, Logistic Regression performed the best among each model _in each category_ to predict negative, neutral, and positive reviews. 
