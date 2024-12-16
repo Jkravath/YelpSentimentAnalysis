@@ -3,7 +3,7 @@
 ## Abstract
 
 
-This project aims to develop a machine learning model to classify Yelp reviews as positive, neutral, or negative, providing businesses with actionable insights. Using a subset of the Yelp Open Dataset comprising 40,000 reviews from Tampa restaurants, our team preprocessed the data through cleaning and lemmatization before applying models like Naive Bayes, Logistic Regression, and advanced techniques such as LDA, QDA, and PCA. Evaluation was performed using metrics like accuracy, precision, and recall, revealing that Logistic Regression was the most predictive model. This result underscores its effectiveness in sentiment analysis tasks, offering a practical tool for businesses to better understand customer feedback.
+Reviews are an essential metric for businesses to understand their customer base, areas for improvement, and areas in which they are excelling [1]. This project aims to develop a machine learning model to classify Yelp reviews as positive, neutral, or negative, providing businesses with actionable insights. Using a subset of the Yelp Open Dataset comprising 40,000 reviews from Tampa restaurants, our team preprocessed the data through cleaning and lemmatization before applying models like Naive Bayes, Logistic Regression, and advanced techniques such as LDA, QDA, and PCA. Evaluation was performed using metrics like accuracy, precision, and recall, revealing that Logistic Regression was the most predictive model. This result underscores its effectiveness in sentiment analysis tasks, offering a practical tool for businesses to better understand customer feedback.
 
 
 ## Introduction 
@@ -12,7 +12,7 @@ Our project addresses the challenge of understanding customer feedback beyond si
 
 This problem is interesting because it bridges natural language processing (NLP) with practical business applications. By analyzing sentiments in textual reviews, businesses can gain nuanced insights to improve their services, resolve customer issues, and maintain competitive edges. The broader use cases extend beyond restaurants to other service-oriented industries, enabling companies to make data-driven decisions based on customer sentiment.
 
-Our approach leverages machine learning techniques to analyze a subset of the Yelp Open Dataset, focusing on approximately 40,000 reviews from Tampa-based restaurants. We explored models ranging from simple Naive Bayes and Logistic Regression to advanced techniques like Linear Discriminant Analysis, Quadratic Discriminant Analysis, and Principal Components Analysis. These methods convert textual data into numerical vectors, enabling fast and accurate classification. We analyzed these models based on the metrics of accuracy, precision, and recall. 
+Our approach leverages machine learning techniques to analyze a subset of the Yelp Open Dataset [2], focusing on approximately 40,000 reviews from Tampa-based restaurants. We explored models ranging from simple Naive Bayes and Logistic Regression to advanced techniques like Linear Discriminant Analysis, Quadratic Discriminant Analysis, and Principal Components Analysis. These methods convert textual data into numerical vectors, enabling fast and accurate classification. We analyzed these models based on the metrics of accuracy, precision, and recall. 
 
 Logistic Regression emerged as the most predictive model in our evaluation, offering an optimal balance of simplicity, computational efficiency, and accuracy. Compared to more complex models, it effectively handled the text data's high dimensionality without overfitting. Previous studies have explored sentiment analysis using similar approaches, but our work emphasizes the practical application of Logistic Regression in a real-world dataset, with robust preprocessing and evaluation ensuring reliable results.
 
@@ -72,3 +72,5 @@ In the future, these models should be trained with more negative reviews so that
 The goal of this project was to find the best model to predict customer sentiment from a text review. The Logistic Regression model far and away beats the other models, even those that are more complex. We believe Logistic Regression performed the best because it is a simple, interpretable model that can efficiently handle high-dimensional text data through techniques like TF-IDF and regularization. Its ability to make linear predictions and manage imbalanced data with class weighting makes it effective for distinguishing between positive and negative reviews. 
 
 ## References
+[1] https://bigideasforsmallbusiness.com/the-impact-of-customer-reviews-on-small-businesses/
+[2] https://www.yelp.com/dataset
